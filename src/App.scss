@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+
+html{
+    padding: 0%;
+    margin: 0%;
+}
+
+
+// TODO Хедер
+
+.navbar{
+    height: 20vh;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar__top {
+    &-logoMain{
+        width: 100px;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &-control{
+        display: flex;
+        justify-content: space-between;
+        &-left{
+            display: flex;
+            gap: 50px;
+            &-reviews{
+                display: inline-flex;
+                font-size: 13px;
+            }
+            &-city{
+                p{
+                    color: rgba(35, 31, 32, 1);
+                }
+                span{
+                    color: rgba(247, 210, 45, 1);
+                }
+            }
+        }
+        &-right{
+            display: flex;
+        flex-direction: row;
+        line-height: 10vh;
+        gap: 50px;
+        button{
+            border-radius: 28px;
+            background-color: rgba(243, 243, 247, 1);
+            color: rgba(105, 111, 122, 1);
+            border: rgba(243, 243, 247, 1);
+            width: 180px;
+            height: 42px;
+            margin-top: 9%;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: rgb(210, 210, 220);
+            transition:  0.8s;
+        }
+        h1{
+            font-size: 26px;
+            color: rgba(247, 210, 45, 1);
+        }
+        }
+    }
+
+    &-infDelivery{
+        display: flex;
+        flex-direction: column;
+        font-size: 17px;
+        &-city{
+            p{
+                color: rgba(35, 31, 32, 1);
+            }
+            span{
+                color: rgba(247, 210, 45, 1);
+                cursor: pointer;
+            }
+        }
+        &-reviews{
+        display: inline-flex;
+        font-size: 13px;
+        }
+    }
+}
+
+.star{
+    color: rgba(255, 200, 22, 1);
+}
+
+//! сам навбар
+
+.navbar__sectionPages{
+    height: 5vh;
+    display: flex;
+    cursor: pointer;
+    &-regulative{
+        line-height: 5vh;
+        display: flex;
+        gap: 25px;
+    }
+    &-links{
+        display: flex;
+        gap: 50px;
+        font-size: 15px;
+    }
+    &-links:hover{
+        color:  rgb(81, 80, 80) ;
+        transition: 0.3s;
+    }
+    &-register{
+        color: rgba(105, 111, 122, 1);
+        cursor: pointer;
+    }
+    &-register:hover{
+        color: rgb(74, 78, 85);
+        transition: 0.8s;
+    }
+    &-cart{
+        button{
+        background-color: rgba(255, 200, 22, 1);
+        border: rgba(255, 200, 22, 1);
+        width: 160px;
+        height: 42px;
+        border-radius: 8px;
+        color: rgba(35, 31, 32, 1);
+        font-size: 16px;
+        font-weight: 700;
+        cursor: pointer;
+        }
+    }
+}
+
+
+// TODO Mэйн
+
+//! Слайдер
+
+.slider-container {
+    width: 80%; /* Установите ширину по вашему усмотрению */
+    margin: 0 auto;
+  }
+
+
+//! Новинки
+
+
+.containerNovelties{
+    width: 1200px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+}
+
+.novelties__cards{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.novelties__cards-main{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    &-card{
+        display: flex;
+        padding: 15px;
+        box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.06); 
+        cursor: pointer;
+        border-radius: 5%;
+        &-text{
+            gap: 5px;
+            h1{
+                color: rgba(0, 0, 0, 1);
+                font-size: 20px;
+                padding: 5px;
+                margin-left: 7%;
+            }
+            p{
+                color: rgba(247, 210, 45, 1);
+                font-size: 15px;
+                margin-left: 12%;
+            }
+        }
+        &-img{
+            width: 110px;
+            height: 110px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    &-card:hover{
+        background-color: #f4f4f4;
+        transition: 0.5s;
+    }
+}
+
+.left-side-photo{
+    margin-top: -10%;
+}
+
+// TODO каталог пицц
+
+.catalog__pizza {
+    width: 1200px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    margin-top: -10%;
+    h1{
+        color: rgba(247, 210, 45, 1);
+    }
+    &-main{
+        &-grid{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Создаем 4 колонки с равным размером */
+            gap: 10px; 
+        }
+    }
+}
+
+
+.catalog__pizza-main-grid-card {
+    h1{
+        color:  rgba(121, 121, 121, 1);
+        font-size: 28px;
+    }
+    p{
+        color:  rgba(121, 121, 121, 1);
+        font-size: 15px;
+    }
+    &-img{
+        width: 250px;
+        width: 250px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &-info{
+        display: inline-flex;
+        align-items: center;
+        h1{
+            color: black;
+        }
+        button{
+            background: rgba(247, 210, 45, 1);
+            color: black;
+            border-radius: 8px;
+            border: rgba(247, 210, 45, 1);
+            width: 120px;
+            height: 36px;
+            margin-left: 30px;
+            cursor: pointer;
+        }
+        button:hover{
+            color: white;
+            transition: 0.5s;
+        }
+    }
+}
+
+// TODO наши акции
+
+.our__stocks {
+    width: 1200px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-top: 5%;
+    text-align: center;
+    h1{
+        font-size: 45px;
+        margin-left: -2%;
+    }
+    span{
+        color: rgba(247, 210, 45, 1);
+    }
+    button{
+        background: rgba(247, 210, 45, 1);
+        color: black;
+        border: rgba(247, 210, 45, 1);
+        border-radius: 25px;
+        width: 160px;
+        height: 50px;
+        cursor: pointer;
+        margin-top: 5%;
+        margin-left: -2%;
+    }
+    button:hover{
+        color: white;
+        transition: 0.5s;
+    }
+    &-flex{
+        margin-top: 3%;
+        display: flex;
+        &-large{
+            width: 100%;
+                img{
+                    height: auto;
+                    max-width: 100%;
+                    display: block;
+                    cursor: pointer;
+                }
+            }
+        &-grid{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px; 
+   
+            &-small{
+                width: 90%;
+                height: 90%;
+                img{
+                    height: auto;
+                    max-width: 100%;
+                    display: block;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.right-side-photo{
+    float: right;
+    margin-top: -17%;
+    img{
+        width: 100%;
+    }
+}
