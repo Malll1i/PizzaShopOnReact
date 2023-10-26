@@ -1,3 +1,15 @@
+#Описание проекта
+
+##Пет проект: Интернет магазин пицерии
+
+##технологии: React + SCSS 
+
+##описание иизменений:
+
+1. Первичная вёрстка без адаптивности, построения логической и функциональной структуры
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
